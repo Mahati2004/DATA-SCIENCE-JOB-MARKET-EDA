@@ -1,6 +1,6 @@
 # DATA SCIENCE JOB EDA AND VISUALIZATION
 
-This dataset contains more than 2000 job listing for data science positions, with features such as:
+This dataset contains more than 7000 job listing for data science positions, with features such as:
 
 * Salary Estimate
 * Location
@@ -13,7 +13,7 @@ we are going to analyze no. of job openings, revenues, Avg min and maximum salar
 
 
 ```python
-project_name = "DATA SCIENCE JOB EDA AND VISULIZATION" 
+project_name = "DATA SCIENCE JOB MARKET EDA" 
 ```
 
 
