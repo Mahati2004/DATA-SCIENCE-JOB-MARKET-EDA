@@ -1,6 +1,6 @@
-# DATA ANALYST JOB EDA AND VISUALIZATION
+# DATA SCIENCE JOB EDA AND VISUALIZATION
 
-This dataset contains more than 2000 job listing for data analyst positions, with features such as:
+This dataset contains more than 2000 job listing for data science positions, with features such as:
 
 * Salary Estimate
 * Location
@@ -13,7 +13,7 @@ we are going to analyze no. of job openings, revenues, Avg min and maximum salar
 
 
 ```python
-project_name = "DATA ANALYST JOB EDA AND VISULIZATION" 
+project_name = "DATA SCIENCE JOB EDA AND VISULIZATION" 
 ```
 
 
@@ -33,7 +33,7 @@ import warnings #to remove future warning
 
 ```python
 #Load dataset
-data=pd.read_csv("DataAnalyst.csv")
+data=pd.read_csv("Datascience.csv")
 ```
 
 
@@ -84,7 +84,7 @@ data.head(2)
     <tr>
       <th>0</th>
       <td>0</td>
-      <td>Data Analyst, Center on Immigration and Justic...</td>
+      <td>Data science, Center on Immigration and Justic...</td>
       <td>$37K-$66K (Glassdoor est.)</td>
       <td>Are you eager to roll up your sleeves and harn...</td>
       <td>3.2</td>
@@ -103,7 +103,7 @@ data.head(2)
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>Quality Data Analyst</td>
+      <td>Quality Data science</td>
       <td>$37K-$66K (Glassdoor est.)</td>
       <td>Overview\n\nProvides analytical and technical ...</td>
       <td>3.8</td>
@@ -586,13 +586,13 @@ chart=chart.set_xticklabels(
 ![png](output_34_0.png)
 
 
-**These are the top 10 companies hiring for Data analyst roles**
+**These are the top 10 companies hiring for Data science roles**
 
-# Salary Distribution of Data Analyst
+# Salary Distribution of Data science
 
 
 ```python
-data_analyst = data[data['Job Title']=='Data Analyst']
+data_science = data[data['Job Title']=='Data science']
 
 
 sns.set(style="white", palette="muted", color_codes=True)
@@ -603,9 +603,9 @@ sns.despine(left=True)
 
 #Plot a histogram and kernel density estimate
 
-sns.distplot(data_analyst['Min_Salary'], color="b", ax=axes[0])
+sns.distplot(data_science['Min_Salary'], color="b", ax=axes[0])
 
-sns.distplot(data_analyst['Max_Salary'], color="r",ax=axes[1])
+sns.distplot(data_science['Max_Salary'], color="r",ax=axes[1])
 
 plt.setp(axes, yticks=[])
 plt.tight_layout()
@@ -664,102 +664,102 @@ df
   </thead>
   <tbody>
     <tr>
-      <th>AI Insights Data Analyst</th>
+      <th>AI Insights Data science</th>
       <td>190.0</td>
       <td>110.0</td>
     </tr>
     <tr>
-      <th>Data Analyst with Data Mapping and API</th>
+      <th>Data science with Data Mapping and API</th>
       <td>190.0</td>
       <td>110.0</td>
     </tr>
     <tr>
-      <th>Senior Data Analyst Studio Finance Engineering</th>
+      <th>Senior Data science Studio Finance Engineering</th>
       <td>190.0</td>
       <td>110.0</td>
     </tr>
     <tr>
-      <th>Senior HR Data Analyst</th>
+      <th>Senior HR Data science</th>
       <td>190.0</td>
       <td>110.0</td>
     </tr>
     <tr>
-      <th>Sr. Data Analyst - Growth &amp; Adoption</th>
+      <th>Sr. Data science - Growth &amp; Adoption</th>
       <td>190.0</td>
       <td>110.0</td>
     </tr>
     <tr>
-      <th>Tableau Data Analyst Intern</th>
+      <th>Tableau Data science Intern</th>
       <td>190.0</td>
       <td>110.0</td>
     </tr>
     <tr>
-      <th>Business Intelligence Data Modeler/Analyst</th>
+      <th>Business Intelligence Data Modeler/science</th>
       <td>178.0</td>
       <td>99.0</td>
     </tr>
     <tr>
-      <th>Data Analyst (College &amp; Foundation Reporting)</th>
+      <th>Data science (College &amp; Foundation Reporting)</th>
       <td>178.0</td>
       <td>99.0</td>
     </tr>
     <tr>
-      <th>Data Scientist/Analyst - Wilbur Labs</th>
+      <th>Data Scientist/science - Wilbur Labs</th>
       <td>178.0</td>
       <td>99.0</td>
     </tr>
     <tr>
-      <th>Data Studio Analyst</th>
+      <th>Data Studio science</th>
       <td>178.0</td>
       <td>99.0</td>
     </tr>
     <tr>
-      <th>DATA Analyst-Remote</th>
+      <th>DATA science-Remote</th>
       <td>168.5</td>
       <td>96.0</td>
     </tr>
     <tr>
-      <th>Business Data Analyst - Senior/Director - Work from Remote</th>
+      <th>Business Data science - Senior/Director - Work from Remote</th>
       <td>159.0</td>
       <td>93.0</td>
     </tr>
     <tr>
-      <th>Data and Policy Analyst IV</th>
+      <th>Data and Policy science IV</th>
       <td>159.0</td>
       <td>93.0</td>
     </tr>
     <tr>
-      <th>Loan Data Analyst</th>
+      <th>Loan Data science</th>
       <td>159.0</td>
       <td>93.0</td>
     </tr>
     <tr>
-      <th>Market Data Services Analyst</th>
+      <th>Market Data Services science</th>
       <td>159.0</td>
       <td>93.0</td>
     </tr>
     <tr>
-      <th>Apple Media Products (AMP) - Big Data Analyst</th>
+      <th>Apple Media Products (AMP) - Big Data science</th>
       <td>151.0</td>
       <td>89.0</td>
     </tr>
     <tr>
-      <th>Biomedical Data Analyst I - Temporary</th>
+      <th>Biomedical Data science I - Temporary</th>
       <td>151.0</td>
       <td>89.0</td>
     </tr>
     <tr>
-      <th>Data Analyst I (German)</th>
+      <th>Data science I (German)</th>
       <td>151.0</td>
       <td>89.0</td>
     </tr>
     <tr>
-      <th>Finance &amp; Accounting Data Analyst</th>
+      <th>Finance &amp; Accounting Data science</th>
       <td>151.0</td>
       <td>89.0</td>
     </tr>
     <tr>
-      <th>Senior Data Analyst - Studio Finance Engineering</th>
+      <th>Senior Data science - Studio Finance Engineering</th>
       <td>151.0</td>
       <td>89.0</td>
     </tr>
@@ -842,52 +842,52 @@ df
   <tbody>
     <tr>
       <th>0</th>
-      <td>Data Analyst</td>
+      <td>Data science</td>
       <td>17</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Senior Data Analyst</td>
+      <td>Senior Data science</td>
       <td>8</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Senior Data Quality Analyst</td>
+      <td>Senior Data Quality science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Senior Analyst</td>
+      <td>Senior science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Data Base Programmer/Analyst</td>
+      <td>Data Base Programmer/science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Senior Product Data Analyst</td>
+      <td>Senior Product Data science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Lead Data Analyst</td>
+      <td>Lead Data science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>BI/Data Analyst</td>
+      <td>BI/Data science</td>
       <td>1</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Supply Chain Data Analyst</td>
+      <td>Supply Chain Data science</td>
       <td>1</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Client Data Analyst</td>
+      <td>Client Data science</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -1517,52 +1517,52 @@ df
   <tbody>
     <tr>
       <th>0</th>
-      <td>Data Analyst</td>
+      <td>Data science</td>
       <td>17</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Senior Data Analyst</td>
+      <td>Senior Data science</td>
       <td>8</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Senior Data Quality Analyst</td>
+      <td>Senior Data Quality science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Senior Analyst</td>
+      <td>Senior science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Data Base Programmer/Analyst</td>
+      <td>Data Base Programmer/science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Senior Product Data Analyst</td>
+      <td>Senior Product Data science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Lead Data Analyst</td>
+      <td>Lead Data science</td>
       <td>2</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>BI/Data Analyst</td>
+      <td>BI/Data science</td>
       <td>1</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Supply Chain Data Analyst</td>
+      <td>Supply Chain Data science</td>
       <td>1</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Client Data Analyst</td>
+      <td>Client Data science</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -1573,7 +1573,7 @@ df
 
 
 ```python
-#visualizing job opening of data analyst
+#visualizing job opening of data science
 plt.figure(figsize=(10,5))
 chart = sns.barplot(
     data=df,
@@ -1610,54 +1610,54 @@ jovian.commit()
 
 
     [jovian] Attempting to save notebook..[0m
-    [jovian] Updating notebook "cvam-jnv/data-analyst-job-eda-and-visulization" on https://jovian.ml/[0m
+    [jovian] Updating notebook "cvam-jnv/data-science-job-eda-and-visulization" on https://jovian.ml/[0m
     [jovian] Uploading notebook..[0m
     [jovian] Capturing environment..[0m
-    [jovian] Committed successfully! https://jovian.ml/cvam-jnv/data-analyst-job-eda-and-visulization[0m
+    [jovian] Committed successfully! https://jovian.ml/cvam-jnv/data-science-job-eda-and-visulization[0m
     
 
 
 
 
-    'https://jovian.ml/cvam-jnv/data-analyst-job-eda-and-visulization'
+    'https://jovian.ml/cvam-jnv/data-science-job-eda-and-visulization'
 
 
 
 ## Asking and Answering Questions
 
-## What is the maximum salary offered to Data Analyst ?
+## What is the maximum salary offered to Data science ?
 
 
 ```python
-maximum_salary=data_analyst['Max_Salary'].max()
-print('The maximum salary offered to Data Analyst is ${}k.'.format(maximum_salary))
+maximum_salary=data_science['Max_Salary'].max()
+print('The maximum salary offered to Data science is ${}k.'.format(maximum_salary))
 ```
 
-    The maximum salary offered to Data Analyst is $190k.
+    The maximum salary offered to Data science is $190k.
     
 
-# What is the minimum salary offered to Data Analyst ?
+# What is the minimum salary offered to Data science ?
 
 
 ```python
-minimum_salary=data_analyst['Max_Salary'].min()
-print('The minimum salary offered to Data Analyst is ${}k.'.format(minimum_salary))
+minimum_salary=data_science['Max_Salary'].min()
+print('The minimum salary offered to Data science is ${}k.'.format(minimum_salary))
 ```
 
-    The minimum salary offered to Data Analyst is $38k.
+    The minimum salary offered to Data science is $38k.
     
 
-# What is the maximum number of job opening for Data Analyst?
+# What is the maximum number of job opening for Data science?
 
 
 ```python
 df=pd.DataFrame(data[data['Easy Apply']==True]['Job Title'].value_counts()).rename(columns={'Job Title':'No_of_openings'})
 df=df.reset_index().rename(columns={'index':'Job Title'})
 max_job_opening=df.No_of_openings.max()
-print('The maximum job opening for Data Analyst is  {}.'.format(max_job_opening))
+print('The maximum job opening for Data science is  {}.'.format(max_job_opening))
 ```
 
-    The maximum job opening for Data Analyst is  17.
+    The maximum job opening for Data science is  17.
     
 
 # What is the maximum easy apply job openings?
@@ -1665,10 +1665,10 @@ print('The maximum job opening for Data Analyst is  {}.'.format(max_job_opening)
 
 ```python
 max_easy_apply=company_opening_df['Easy Apply'].max()
-print('The maximum easy apply job for Data Analyst is  {}.'.format(max_easy_apply))
+print('The maximum easy apply job for Data science is  {}.'.format(max_easy_apply))
 ```
 
-    The maximum easy apply job for Data Analyst is  10.
+    The maximum easy apply job for Data science is  10.
     
 
 # Which company has the maximum easy apply job openings ?
@@ -1761,13 +1761,13 @@ df['employee_size'].max()
 
 ## Inferences and Conclusion
 
-The Data Analyst has 17 job openings for now 
+The Data science has 17 job openings for now 
 
-The Data analyst has salary in between $ 38k-190k
+The Data science has salary in between $ 38k-190k
 
-Apex system offered 10 easy apply job opening for data analyst 
+Apex system offered 10 easy apply job opening for data science 
 
-There are 443 listing of Data analyst but not all companies are hiriing
+There are 443 listing of Data science but not all companies are hiriing
 
 ## References and Future Work
 There's a wealth of information to be discovered using the survey, and we've barely scratched the surface. Here are some ideas for further exploration:
